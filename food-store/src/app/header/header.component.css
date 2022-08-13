@@ -1,0 +1,9 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.dropper {
+  background: transparent;
+  border: navajowhite;
+  color: white;
+}
