@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "masters-662e1": {
+      "hosting": {
+        "food-store": [
+          "masters-662e1"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "masters-662e1"
+  }
+}

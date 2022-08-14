@@ -96,6 +96,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "food-store:build:production",
+            "firebaseProject": "masters-662e1",
+            "firebaseHostingSite": "masters-662e1"
+          }
         }
       }
     }
