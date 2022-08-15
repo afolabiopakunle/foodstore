@@ -1,6 +1,12 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
     <span>Food Store</span>
+    <mat-nav-list class="list-horizontal">
+
+      <mat-list-item>
+        <button mat-menu-item>Home</button>
+      </mat-list-item>
+    </mat-nav-list>
     <span class="example-spacer"></span>
     <button class="dropper" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
       Manage
