@@ -2,8 +2,31 @@
   flex: 1 1 auto;
 }
 
+.title {
+  cursor: pointer;
+}
 .dropper {
   background: transparent;
   border: navajowhite;
   color: white;
+  cursor: pointer;
+  display: flex;
+}
+
+.list-horizontal {
+  margin-top: -4px;
+  color: white;
+}
+
+.header-link {
+  color: white;
+}
+
+.header-link.active {
+  color: skyblue;
+}
+
+.user-name {
+  display: inline-block;
+  margin-top: 4px;
 }

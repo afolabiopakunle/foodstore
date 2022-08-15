@@ -1,29 +1,33 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span>Food Store</span>
+    <span routerLink="/" class="title">Food Store</span>
     <mat-nav-list class="list-horizontal">
 
       <mat-list-item>
-        <button mat-menu-item>Home</button>
+        <button mat-menu-item routerLink="shopping-cart" class="header-link" routerLinkActive="active">Shopping Cart</button>
       </mat-list-item>
     </mat-nav-list>
     <span class="example-spacer"></span>
     <button class="dropper" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-      Manage
+      <span class="user-name">Username</span>
       <mat-icon>arrow_drop_down</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>
+      <button mat-menu-item routerLink="orders">
         <mat-icon>dialpad</mat-icon>
-        <span>Redial</span>
+        <span>My Orders</span>
       </button>
-      <button mat-menu-item disabled>
+      <button mat-menu-item routerLink="admin/orders">
         <mat-icon>voicemail</mat-icon>
-        <span>Check voice mail</span>
+        <span>Manage Orders</span>
+      </button>
+      <button mat-menu-item routerLink="admin/products">
+        <mat-icon>notifications_off</mat-icon>
+        <span>My Products</span>
       </button>
       <button mat-menu-item>
         <mat-icon>notifications_off</mat-icon>
-        <span>Disable alerts</span>
+        <span>Log Out</span>
       </button>
     </mat-menu>
   </mat-toolbar-row>
